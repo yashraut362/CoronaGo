@@ -23,7 +23,7 @@ class Home extends Component {
                             coronavirus.
                             Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover
                         without special treatment.</h6>
-                            <a href="#" class="btn indigo waves-effect waves-light right">Learn More</a>
+                            <a href="https://www.mygov.in/" target="_blank" class="btn indigo waves-effect waves-light right">Learn More</a>
                         </div>
                     </div>
                 </div>

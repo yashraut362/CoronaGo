@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Table from '../components/table'
+import Graphs from './graphs'
+import Graph from './graphs'
 
 class Dashboard extends Component {
     state = {
@@ -12,7 +14,7 @@ class Dashboard extends Component {
     componentDidMount() {
         axios.get('https://covid19-india-adhikansh.herokuapp.com/summary')
             .then(res => {
-                // console.log(res.data["Total Cases"])
+                console.log(res.data["Total Cases"])
                 this.setState({
                     Death: res.data.Death,
                     total: res.data["Total Cases"],
@@ -76,17 +78,15 @@ class Dashboard extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col s12 l8">
-                        <Table />
-                    </div>
-                    <div className="col s12 s4">
-
-                    </div>
-                </div>
+                <Table />
             </div>
-
         )
     }
 }
 export default Dashboard;
+{/* <div className="row">
+    <div className="col s12 l8">
+        <Table />
+        <Graph />
+    </div>
+</div> */}

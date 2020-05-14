@@ -7,25 +7,26 @@ class Footer extends Component {
                 <div class="container">
                     <div class="row">
                         <div class="col s12 l6">
-                            <h5>About Me</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <h5 class="blue-text">About Me</h5>
+                            <p>Hello Yash Here , Mobile/Web dev from Mumbai,india</p>
+                            <h5 class="blue-text">Technologies/Languages  I'm comfortable with.</h5>
+                            <p>Flutter - ReactJs -VueJs - MaterializeCss - Python - Git -SQL - Redux - Mobx</p>
                         </div>
                         <div class="col s12 l4 offset-l2">
                             <h5>Contact Me</h5>
                             <ul>
+
                                 <li>
-                                    <a href="#" class="grey-text text-lighten-3">Github</a>
+                                    <a href="https://github.com/yashraut362/" target="_blank" class="grey-text text-lighten-3"><i class="fab fa-github"></i> Github</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="grey-text text-lighten-3">Instagram</a>
+                                    <a href="https://www.instagram.com/_.yashraut._/" target="_blank" class="grey-text text-lighten-3"><i class="fab fa-instagram"></i> Instagram</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="grey-text text-lighten-3">Facebook</a>
+                                    <a href="https://www.facebook.com/yash.raut.1000" target="_blank" class="grey-text text-lighten-3"><i class="fab fa-facebook"></i> Facebook</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="grey-text text-lighten-3">Linked-In</a>
+                                    <a href="https://www.linkedin.com/in/yash-raut-55330715a/" target="_blank" class="grey-text text-lighten-3"><i class="fab fa-linkedin"></i> Linked-In</a>
                                 </li>
                             </ul>
                         </div>

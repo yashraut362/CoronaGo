@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
-import axios from 'axios'
+// import React, { Component } from 'react'
+// import { Pie } from 'react-chartjs-2'
+// import axios from 'axios'
+// import Graph from './graphs'
 
-class Donation extends Component {
-    render() {
-        return (
-           <div></div>
-       )
-    }
-}
-export default Donation;
+
+// class Donation extends Component {
+//     render() {
+//         return (
+//             <div>
+//                 <Graph />
+//             </div>
+//         )
+//     }
+// }
+// export default Donation;

@@ -35,9 +35,9 @@ class Navbar extends Component {
                             <span class="white-text">Covid Tracker India</span>
                         </a>
                     </li>
-                    <li><a class="sidenav-close" href="/">Home</a></li>
-                    <li><a class="sidenav-close" href="/Dashboard">Dashboard</a></li>
-                    <li><a class="sidenav-close" href="/Prevention">Prevention</a></li>
+                    <li><Link class="sidenav-close" to="/">Home</Link></li>
+                    <li><Link class="sidenav-close" to="/Dashboard">Dashboard</Link></li>
+                    <li><Link class="sidenav-close" to="/Prevention">Prevention</Link></li>
                     {/* <li><a class="sidenav-close" href="/Donation">Donation</a></li> */}
                 </ul>
             </div>

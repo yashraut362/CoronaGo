@@ -14,12 +14,12 @@ class Dashboard extends Component {
     componentDidMount() {
         axios.get('https://covid19-india-adhikansh.herokuapp.com/summary')
             .then(res => {
-                console.log(res.data["Total Cases"])
+               // console.log(res.data["Total Cases"])
                 this.setState({
                     Death: res.data.Death,
                     total: res.data["Total Cases"],
                     recovered: res.data["Cured/Discharged/Migrated"],
-                    confirmed: res.data["Total Confirmed cases"]
+                    confirmed: res.data["Active cases"]
                 })
                 // console.log(this.state.total)
             })

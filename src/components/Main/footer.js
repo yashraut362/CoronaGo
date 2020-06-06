@@ -10,7 +10,7 @@ class Footer extends Component {
                             <h5 class="blue-text">About Me</h5>
                             <p>Hello Yash Here , Mobile/Web dev from Mumbai,india</p>
                             <h5 class="blue-text">Technologies/Languages  I'm comfortable with.</h5>
-                            <p>Flutter - ReactJs -VueJs - MaterializeCss - Python - Git -SQL - Redux - Mobx</p>
+                            <p>Flutter - ReactJs - VueJs - Python - Dart - MaterializeCss -Bootstrap- Git - SQL - Firebase- Mobx - RestApi -</p>
                         </div>
                         <div class="col s12 l4 offset-l2">
                             <h5>Contact Me</h5>

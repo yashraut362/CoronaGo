@@ -22,7 +22,7 @@ class Table extends Component {
                     <tbody key={post._id}>
                         <tr class="center">
                             <td >{post.name}</td>
-                            <td >{post.confirmed}</td>
+                            <td >{post.active}</td>
                             <td>{post.cured}</td>
                             <td>{post.death}</td>
                             <td>{post.total}</td>

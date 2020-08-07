@@ -15,6 +15,7 @@ class Table extends Component {
             })
     }
     render() {
+        
         const { posts } = this.state;
         const postList = posts.length ? (
             posts.map(post => {

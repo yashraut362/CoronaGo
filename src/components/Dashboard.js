@@ -14,7 +14,7 @@ class Dashboard extends Component {
     componentDidMount() {
         axios.get('https://covid19-india-adhikansh.herokuapp.com/summary')
             .then(res => {
-               // console.log(res.data["Total Cases"])
+                // console.log(res.data["Total Cases"])
                 this.setState({
                     Death: res.data.Death,
                     total: res.data["Total Cases"],
@@ -27,7 +27,7 @@ class Dashboard extends Component {
     render() {
         return (
             <div className="container">
-                <h3 className="indigo-text">Dashboard</h3>
+                <h3 className="indigo-text">Dashboard India</h3>
                 <div className="row">
                     <div className="col s12 l3">
                         <div class="card">
@@ -78,6 +78,7 @@ class Dashboard extends Component {
                         </div>
                     </div>
                 </div>
+                <h4 className="indigo-text">State-Wise Dashboard</h4>
                 <Table />
             </div>
         )

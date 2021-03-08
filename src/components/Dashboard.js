@@ -12,14 +12,14 @@ class Dashboard extends Component {
         total: null,
     }
     componentDidMount() {
-        axios.get('https://covid19-india-adhikansh.herokuapp.com/summary')
+        axios.get('https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true')
             .then(res => {
-                // console.log(res.data["Total Cases"])
+            //    console.log(res.data)
                 this.setState({
-                    Death: res.data.Death,
-                    total: res.data["Total Cases"],
-                    recovered: res.data["Cured/Discharged/Migrated"],
-                    confirmed: res.data["Active cases"]
+                    Death: res.data.deaths,
+                    total: res.data.totalCases,
+                    recovered: res.data.recovered,
+                    confirmed: res.data.activeCases,
                 })
                 // console.log(this.state.total)
             })

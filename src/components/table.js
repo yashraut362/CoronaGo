@@ -6,27 +6,27 @@ class Table extends Component {
         posts: []
     }
     componentDidMount() {
-        axios.get('https://covid19-india-adhikansh.herokuapp.com/states')
+        axios.get('https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true')
             .then(res => {
-                console.log(res.data.state)
+                //  console.log(res.data.regionData)
                 this.setState({
-                    posts: res.data.state
+                    posts: res.data.regionData
                 })
             })
     }
     render() {
-        
+
         const { posts } = this.state;
         const postList = posts.length ? (
             posts.map(post => {
                 return (
                     <tbody key={post._id}>
                         <tr class="center">
-                            <td >{post.name}</td>
-                            <td >{post.active}</td>
-                            <td>{post.cured}</td>
-                            <td>{post.death}</td>
-                            <td>{post.total}</td>
+                            <td >{post.region}</td>
+                            <td >{post.totalInfected}</td>
+                            <td>{post.recovered}</td>
+                            <td>{post.deceased}</td>
+
                         </tr>
                     </tbody>
                 )
@@ -47,7 +47,7 @@ class Table extends Component {
                                 <th>Confirmed</th>
                                 <th>Recovered</th>
                                 <th>Death</th>
-                                <th>Total</th>
+
                             </tr>
                         </thead>
                         {postList}
